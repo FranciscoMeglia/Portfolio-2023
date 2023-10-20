@@ -1,0 +1,700 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;700&family=Raleway:wght@100;300;500;900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.712)), url(../Assets/background-image.webp);
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+.main .whatsapp {
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 0px;
+  right: -100px;
+  transition: 0.6s;
+}
+.main .whatsapp img {
+  width: 130px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.main .whatsapp img:hover {
+  scale: 1.2;
+}
+.main .nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  animation: fadeInDown;
+  animation-duration: 2s;
+}
+.main .nav .title {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .nav .title h2 {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+@media screen and (max-width: 550px) {
+  .main .nav .title h2 {
+    font-size: 30px;
+  }
+}
+.main .nav .links {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1100px) {
+  .main .nav .links {
+    display: none;
+  }
+}
+.main .nav .links ul {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+.main .nav .links ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+.main .nav .links ul li a:hover {
+  color: rgba(255, 255, 255, 0.438);
+}
+.main .nav .btn {
+  width: auto;
+  height: auto;
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 1100px) {
+  .main .nav .btn {
+    display: block;
+  }
+}
+.main .nav .btn i {
+  font-size: 40px;
+  color: white;
+}
+.main .navMobile {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .navMobile .title {
+  display: none;
+}
+.main .navMobile .btn {
+  position: absolute;
+  right: 8%;
+  top: 25px;
+}
+.main .navMobile .btn i {
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+.main .navMobile .links ul {
+  list-style: none;
+}
+.main .navMobile .links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+}
+.main .main-container {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .main-container .info {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: fadeInDown;
+  animation-duration: 3s;
+}
+.main .main-container .info .hi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+.main .main-container .info p {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  margin: 0;
+  color: white;
+}
+@media screen and (max-width: 550px) {
+  .main .main-container .info p {
+    font-size: 35px;
+  }
+}
+.main .main-container .info h1 {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+  margin: 0;
+  color: white;
+}
+@media screen and (max-width: 550px) {
+  .main .main-container .info h1 {
+    font-size: 50px;
+  }
+}
+.main .main-container .info a {
+  margin-top: 5px;
+  padding: 10px 30px;
+  background-color: rgba(255, 255, 255, 0.144);
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 900;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.main .main-container .info a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.about {
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+}
+.about .title {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1250px) {
+  .about .title {
+    width: 90%;
+  }
+}
+.about .title p {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  text-decoration: underline;
+}
+.about .info-me {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1250px) {
+  .about .info-me {
+    width: 90%;
+  }
+}
+.about .info-me p {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+}
+.about .education {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1250px) {
+  .about .education {
+    width: 90%;
+  }
+}
+.about .education .title-education {
+  width: 100%;
+  height: auto;
+  text-align: end;
+}
+.about .education .title-education p {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  text-decoration: underline;
+}
+.about .education .education-info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.about .education .education-info .education-card {
+  width: 100%;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+@media screen and (max-width: 860px) {
+  .about .education .education-info .education-card {
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+.about .education .education-info .education-card .utn {
+  width: 120px;
+  padding-left: 20px;
+  padding-bottom: 3px;
+}
+@media screen and (max-width: 1100px) {
+  .about .education .education-info .education-card .utn {
+    width: 95px;
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .about .education .education-info .education-card .utn {
+    padding-top: 6px;
+  }
+}
+.about .education .education-info .education-card .udemy {
+  width: 70px;
+  padding-left: 30px;
+  padding-bottom: 3px;
+}
+@media screen and (max-width: 1100px) {
+  .about .education .education-info .education-card .udemy {
+    width: 60px;
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .about .education .education-info .education-card .udemy {
+    padding-top: 11px;
+  }
+}
+.about .education .education-info .education-card .cui {
+  width: 70px;
+  padding-left: 30px;
+  padding-bottom: 0px;
+}
+@media screen and (max-width: 1100px) {
+  .about .education .education-info .education-card .cui {
+    width: 50px;
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .about .education .education-info .education-card .cui {
+    padding-top: 14px;
+  }
+}
+.about .education .education-info .education-card p {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  margin-left: 10px;
+  padding-bottom: 0px;
+}
+@media screen and (max-width: 1100px) {
+  .about .education .education-info .education-card p {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .about .education .education-info .education-card p {
+    margin: 10px;
+    padding-bottom: 50px;
+  }
+}
+.about .education .education-info .education-card a {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  position: absolute;
+  padding: 10px 1.5%;
+  border: 2px solid black;
+  border-radius: 10px;
+  right: 10px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+@media screen and (max-width: 860px) {
+  .about .education .education-info .education-card a {
+    bottom: 10px;
+    width: 90%;
+    right: 3%;
+  }
+}
+.about .education .education-info .education-card a:hover {
+  background-color: white;
+  color: black;
+}
+.about .skills {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1250px) {
+  .about .skills {
+    width: 90%;
+  }
+}
+.about .skills .title-skills {
+  width: 100%;
+  height: auto;
+  text-align: start;
+}
+.about .skills .title-skills p {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  text-decoration: underline;
+}
+.about .skills .skills-set {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.about .skills .skills-set .skill {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 10px 2px rgb(124, 124, 124);
+  border-radius: 100%;
+}
+.about .skills .skills-set .skill img {
+  width: 50%;
+  transition: 0.3s;
+}
+.about .skills .skills-set .skill:hover img {
+  scale: 1.2;
+}
+
+.projects {
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+}
+.projects .title {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  text-align: end;
+}
+@media screen and (max-width: 1250px) {
+  .projects .title {
+    width: 90%;
+  }
+}
+.projects .title p {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  text-decoration: underline;
+}
+.projects .projects-container {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+@media screen and (max-width: 1250px) {
+  .projects .projects-container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .projects .projects-container .project:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 860px) {
+  .projects .projects-container .project:nth-child(4) {
+    flex-direction: column-reverse;
+  }
+}
+.projects .projects-container .project {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 860px) {
+  .projects .projects-container .project {
+    flex-direction: column;
+    height: auto;
+  }
+}
+.projects .projects-container .project .info {
+  width: 40%;
+  height: 90%;
+}
+@media screen and (max-width: 860px) {
+  .projects .projects-container .project .info {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+  }
+}
+.projects .projects-container .project .info h3 {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  margin: 0;
+  margin-top: 5px;
+}
+.projects .projects-container .project .info p {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+.projects .projects-container .project .info .tecs {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.projects .projects-container .project .info .tecs i {
+  font-size: 35px;
+}
+.projects .projects-container .project .info .buttons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.projects .projects-container .project .info .buttons a {
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 900;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.projects .projects-container .project .info .buttons a:hover {
+  background-color: white;
+  color: black;
+}
+.projects .projects-container .project .img {
+  width: 58%;
+  height: 90%;
+  border-radius: 10px;
+  background-size: cover;
+  border: 2px solid black;
+}
+@media screen and (max-width: 860px) {
+  .projects .projects-container .project .img {
+    width: 100%;
+    height: 200px;
+  }
+}
+.projects .projects-container a {
+  text-decoration: none;
+}
+.projects .projects-container .view-more {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects .projects-container .view-more p {
+  padding: 20px 100px;
+  background-color: black;
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  text-decoration: none;
+  border: 2px solid black;
+  transition: 0.2s;
+  text-decoration: none;
+}
+@media screen and (max-width: 550px) {
+  .projects .projects-container .view-more p {
+    font-size: 20px;
+    padding: 20px 40px;
+  }
+}
+.projects .projects-container .view-more p:hover {
+  background-color: white;
+  color: black;
+}
+
+.contact {
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 100px;
+}
+.contact .title {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (max-width: 1250px) {
+  .contact .title {
+    width: 90%;
+  }
+}
+.contact .title p {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  text-decoration: underline;
+}
+.contact .form-container {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1250px) {
+  .contact .form-container {
+    width: 90%;
+  }
+}
+.contact .form-container form {
+  width: 800px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.contact .form-container form input {
+  width: 100%;
+  height: 50px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.contact .form-container form textarea {
+  width: 100%;
+  resize: none;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.contact .form-container form button {
+  width: 102%;
+  height: 50px;
+  border: 1px solid black;
+  background-color: white;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.contact .form-container form button:hover {
+  background-color: black;
+  color: white;
+}
+.contact .socials {
+  width: 816px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  gap: 10px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 860px) {
+  .contact .socials {
+    width: 92%;
+  }
+}
+.contact .socials i {
+  color: white;
+  font-size: 40px;
+  transition: 0.2s;
+}
+.contact .socials i:hover {
+  color: rgba(255, 255, 255, 0.349);
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}/*# sourceMappingURL=Styles.css.map */

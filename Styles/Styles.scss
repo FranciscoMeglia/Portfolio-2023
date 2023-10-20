@@ -1,0 +1,768 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;700&family=Raleway:wght@100;300;500;900&display=swap');
+@import './MediaQ.scss';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+// MAIN SECTION
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.712)), url(../Assets/background-image.webp);
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+
+    // WHATSAPP 
+    .whatsapp {
+        width: auto;
+        height: auto;
+        position: absolute;
+        bottom: 0px;
+        right: -100px;
+        transition: 0.6s;
+
+        img {
+            width: 130px;
+            transition: 0.2s;
+            cursor: pointer;
+
+            &:hover {
+                scale: 1.2;
+            }
+        }
+    }
+
+    // NAVBAR
+    .nav {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        animation: fadeInDown;
+        animation-duration: 2s;
+
+        .title {
+            width: auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+                font-family: 'Rajdhani', sans-serif;
+                font-weight: 500;
+                font-size: 40px;
+                padding: 0;
+                margin: 0;
+                color: white;
+
+                @include mobile2 {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .links {
+            width: auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include tablet2 {
+                display: none;
+            }
+
+            ul {
+                width: auto;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+                list-style: none;
+
+                li a {
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    font-family: 'Rajdhani', sans-serif;
+                    font-weight: 500;
+                    font-size: 30px;
+
+                    &:hover {
+                        color: rgba(255, 255, 255, 0.438);
+                    }
+                }
+            }
+        }
+
+        .btn {
+            width: auto;
+            height: auto;
+            display: none;
+            cursor: pointer;
+
+            @include tablet2 {
+                display: block;
+            }
+
+            i {
+                font-size: 40px;
+                color: white;
+            }
+        }
+    }
+
+    // NAV MOBILE
+
+    .navMobile {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .title {
+            display: none;
+        }
+
+        .btn {
+            position: absolute;
+            right: 8%;
+            top: 25px;
+
+            i {
+                font-size: 40px;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+        .links ul {
+            list-style: none;
+
+            li a {
+                color: white;
+                text-decoration: none;
+                font-size: 40px;
+                font-family: 'Rajdhani', sans-serif;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .main-container {
+        width: 100%;
+        height: calc(100vh - 100px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .info {
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            animation: fadeInDown;
+            animation-duration: 3s;
+
+            .hi {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+            }
+
+            p {
+                font-family: 'Rajdhani', sans-serif;
+                font-weight: 500;
+                font-size: 40px;
+                margin: 0;
+                color: white;
+
+                @include mobile2 {
+                    font-size: 35px;
+                }
+            }
+
+            h1 {
+                font-family: 'Rajdhani', sans-serif;
+                font-weight: 900;
+                font-size: 70px;
+                margin: 0;
+                color: white;
+
+                @include mobile2 {
+                    font-size: 50px;
+                }
+            }
+
+            a {
+                margin-top: 5px;
+                padding: 10px 30px;
+                background-color: rgba(255, 255, 255, 0.144);
+                color: white;
+                font-family: 'Rajdhani', sans-serif;
+                font-weight: 900;
+                text-decoration: none;
+                transition: 0.2s;
+
+                &:hover {
+                    background-color: rgb(255, 255, 255);
+                    color: rgb(0, 0, 0);
+                }
+            }
+        }
+    }
+}
+
+// ABOUT-SECTION
+.about {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+
+    .title {
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+
+        @include tablet1 {
+            width: 90%;
+        }
+
+        p {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 900;
+            font-size: 40px;
+            text-decoration: underline;
+        }
+    }
+
+    .info-me {
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+
+        @include tablet1 {
+            width: 90%;
+        }
+
+        p {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 300;
+            font-size: 25px;
+        }
+    }
+
+    .education {
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+
+        @include tablet1 {
+            width: 90%;
+        }
+
+        .title-education {
+            width: 100%;
+            height: auto;
+            text-align: end;
+
+            p {
+                font-family: 'Rajdhani', sans-serif;
+                font-weight: 900;
+                font-size: 40px;
+                text-decoration: underline;
+            }
+        }
+
+        .education-info {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+
+            .education-card {
+                width: 100%;
+                height: auto;
+                border: 2px solid black;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                position: relative;
+
+                @include mobile1 {
+                    align-items: flex-start;
+                    justify-content: center;
+                }
+
+                .utn {
+                    width: 120px;
+                    padding-left: 20px;
+                    padding-bottom: 3px;
+
+                    @include tablet2 {
+                        width: 95px;
+                        padding-left: 10px;
+                    }
+
+                    @include mobile1 {
+                        padding-top: 6px;
+                    }
+                }
+
+                .udemy {
+                    width: 70px;
+                    padding-left: 30px;
+                    padding-bottom: 3px;
+
+                    @include tablet2 {
+                        width: 60px;
+                        padding-left: 20px;
+                    }
+
+                    @include mobile1 {
+                        padding-top: 11px;
+                    }
+                }
+
+                .cui {
+                    width: 70px;
+                    padding-left: 30px;
+                    padding-bottom: 0px;
+
+                    @include tablet2 {
+                        width: 50px;
+                        padding-left: 20px;
+                    }
+
+                    @include mobile1 {
+                        padding-top: 14px;
+                    }
+                }
+
+                p {
+                    font-family: 'Rajdhani', sans-serif;
+                    font-weight: 500;
+                    font-size: 30px;
+                    margin-left: 10px;
+                    padding-bottom: 0px;
+
+                    @include tablet2 {
+                        font-size: 23px;
+                    }
+
+                    @include mobile1 {
+                        margin: 10px;
+                        padding-bottom: 50px;
+                    }
+                }
+
+                a {
+                    background-color: rgb(0, 0, 0);
+                    color: white;
+                    position: absolute;
+                    padding: 10px 1.5%;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                    right: 10px;
+                    font-family: 'Rajdhani', sans-serif;
+                    font-weight: 900;
+                    font-size: 15px;
+                    text-decoration: none;
+                    transition: 0.2s;
+
+                    @include mobile1 {
+                        bottom: 10px;
+                        width: 90%;
+                        right: 3%;
+                    }
+
+                    &:hover {
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    // SKILLS SET
+    .skills {
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+
+        @include tablet1 {
+            width: 90%;
+        }
+
+        .title-skills {
+            width: 100%;
+            height: auto;
+            text-align: start;
+
+            p {
+                font-family: 'Rajdhani', sans-serif;
+                font-weight: 900;
+                font-size: 40px;
+                text-decoration: underline;
+            }
+        }
+
+        .skills-set {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .skill {
+                width: 120px;
+                height: 120px;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                box-shadow: 0px 1px 10px 2px rgb(124, 124, 124);
+                border-radius: 100%;
+
+                img {
+                    width: 50%;
+                    transition: 0.3s;
+                }
+
+                &:hover {
+                    img {
+                        scale: 1.2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// PROJECTS SECTION
+.projects {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+
+    .title {
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        text-align: end;
+
+        @include tablet1 {
+            width: 90%;
+        }
+
+        p {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 900;
+            font-size: 40px;
+            text-decoration: underline;
+        }
+    }
+
+    .projects-container {
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+
+        @include tablet1 {
+            width: 90%;
+        }
+
+        .project:nth-child(2) {
+            @include mobile1 {
+                flex-direction: column-reverse;
+            }
+        }
+
+        .project:nth-child(4) {
+            @include mobile1 {
+                flex-direction: column-reverse;
+            }
+        }
+
+        .project {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include mobile1 {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .info {
+                width: 40%;
+                height: 90%;
+
+                @include mobile1 {
+                    width: 100%;
+                    height: auto;
+                    padding-bottom: 10px;
+                }
+
+                h3 {
+                    font-family: 'Rajdhani', sans-serif;
+                    font-weight: 500;
+                    font-size: 35px;
+                    margin: 0;
+                    margin-top: 5px;
+
+                }
+
+                p {
+                    font-family: 'Rajdhani', sans-serif;
+                    font-weight: 500;
+                    font-size: 17px;
+                }
+
+                .tecs {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 5px;
+
+                    i {
+                        font-size: 35px;
+                    }
+                }
+
+                .buttons {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 10px;
+
+                    a {
+                        background-color: black;
+                        border: 2px solid black;
+                        color: white;
+                        padding: 10px 15px;
+                        border-radius: 5px;
+                        font-family: 'Rajdhani', sans-serif;
+                        font-weight: 900;
+                        text-decoration: none;
+                        transition: 0.2s;
+
+                        &:hover {
+                            background-color: white;
+                            color: black;
+                        }
+                    }
+                }
+            }
+
+            .img {
+                width: 58%;
+                height: 90%;
+                border-radius: 10px;
+                background-size: cover;
+                border: 2px solid black;
+
+                @include mobile1 {
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .view-more {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                padding: 20px 100px;
+                background-color: black;
+                color: white;
+                font-family: 'Rajdhani', sans-serif;
+                font-size: 20px;
+                font-weight: 900;
+                text-decoration: none;
+                border: 2px solid black;
+                transition: 0.2s;
+                text-decoration: none;
+
+                @include mobile2 {
+                    font-size: 20px;
+                    padding: 20px 40px;
+                }
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+// CONTACT SECTION
+.contact {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 100px;
+
+    .title {
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+
+        @include tablet1 {
+            width: 90%;
+        }
+
+        p {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 900;
+            font-size: 40px;
+            text-decoration: underline;
+        }
+    }
+
+    .form-container {
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include tablet1 {
+            width: 90%;
+        }
+
+        form {
+            width: 800px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-direction: column;
+            //background-color: antiquewhite;
+
+            input {
+                width: 100%;
+                height: 50px;
+                font-family: 'Rajdhani', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                padding-left: 10px;
+            }
+
+            textarea {
+                width: 100%;
+                resize: none;
+                font-family: 'Rajdhani', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                padding-left: 10px;
+            }
+
+            button {
+                width: 102%;
+                height: 50px;
+                border: 1px solid black;
+                background-color: white;
+                color: black;
+                transition: 0.2s;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .socials {
+        width: 816px;
+        height: 70px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(0, 0, 0);
+        gap: 10px;
+        margin-top: 20px;
+
+        @include mobile1 {
+            width: 92%;
+        }
+
+        i {
+            color: white;
+            font-size: 40px;
+            transition: 0.2s;
+
+            &:hover {
+                color: rgba(255, 255, 255, 0.349);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// FOOTER SECTION
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+    }
+}
