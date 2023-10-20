@@ -652,6 +652,7 @@ body {
   border: 1px solid black;
   background-color: white;
   transition: 0.2s;
+  color: black;
   cursor: pointer;
 }
 .contact .form-container form button:hover {
