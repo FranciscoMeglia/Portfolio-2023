@@ -1,3 +1,4 @@
+const whatsapp = document.getElementById("whatsapp")
 const sayHi = document.getElementById("hi")
 
 // SAY HI ANI
