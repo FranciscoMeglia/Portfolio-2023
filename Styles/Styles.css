@@ -33,7 +33,7 @@ body {
   cursor: pointer;
 }
 .main .whatsapp img:hover {
-  scale: 1.2;
+  scale: 0.9;
 }
 .main .nav {
   width: 100%;
