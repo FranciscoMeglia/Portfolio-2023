@@ -26,8 +26,10 @@ body {
         height: auto;
         position: absolute;
         bottom: 0px;
-        right: -100px;
+        right: 0px;
         transition: 0.6s;
+        animation-name: fadeInUp;
+        animation-duration: 2s;
 
         img {
             width: 130px;
@@ -150,6 +152,7 @@ body {
 
         .links ul {
             list-style: none;
+            padding: 0;
 
             li a {
                 color: white;
