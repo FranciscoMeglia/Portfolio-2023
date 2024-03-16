@@ -515,6 +515,12 @@ body {
             }
         }
 
+        .project:nth-child(6) {
+            @include mobile1 {
+                flex-direction: column-reverse;
+            }
+        }
+
         .project {
             width: 100%;
             height: 300px;
