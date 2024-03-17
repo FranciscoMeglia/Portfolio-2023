@@ -645,6 +645,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   padding-left: 10px;
+  border: 1px solid black;
 }
 .contact .form-container form textarea {
   width: 100%;
@@ -653,6 +654,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   padding-left: 10px;
+  border: 1px solid black;
 }
 .contact .form-container form button {
   width: 102%;
