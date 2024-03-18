@@ -646,6 +646,12 @@ body {
   font-weight: 500;
   padding-left: 10px;
   border: 1px solid black;
+  border-radius: 0;
+}
+@media screen and (max-width: 550px) {
+  .contact .form-container form input {
+    width: 98.5%;
+  }
 }
 .contact .form-container form textarea {
   width: 100%;
@@ -655,6 +661,12 @@ body {
   font-weight: 500;
   padding-left: 10px;
   border: 1px solid black;
+  border-radius: 0;
+}
+@media screen and (max-width: 550px) {
+  .contact .form-container form textarea {
+    width: 98.5%;
+  }
 }
 .contact .form-container form button {
   width: 102%;

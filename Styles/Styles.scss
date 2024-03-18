@@ -703,6 +703,10 @@ body {
                 font-weight: 500;
                 padding-left: 10px;
                 border: 1px solid black;
+                border-radius: 0;
+                @include mobile2 {
+                    width: 98.5%;
+                }
             }
 
             textarea {
@@ -713,6 +717,11 @@ body {
                 font-weight: 500;
                 padding-left: 10px;
                 border: 1px solid black;
+                border-radius: 0;
+
+                @include mobile2 {
+                    width: 98.5%;
+                }
             }
 
             button {
