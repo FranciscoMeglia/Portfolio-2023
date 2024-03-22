@@ -1,7 +1,7 @@
 const whatsapp = document.getElementById("whatsapp")
 const sayHi = document.getElementById("hi")
 
-// SAY HI ANI
+// SAY HI ANIMATION
 setTimeout(() => {
     sayHi.style.animation = "sayHi 1s infinite"
 }, 2000)

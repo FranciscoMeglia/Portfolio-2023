@@ -56,7 +56,7 @@ body {
   font-size: 40px;
   padding: 0;
   margin: 0;
-  color: white;
+  color: #fff;
 }
 @media screen and (max-width: 550px) {
   .main .nav .title h2 {
@@ -86,7 +86,7 @@ body {
 }
 .main .nav .links ul li a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-family: "Rajdhani", sans-serif;
   font-weight: 500;
   font-size: 30px;
@@ -107,12 +107,12 @@ body {
 }
 .main .nav .btn i {
   font-size: 40px;
-  color: white;
+  color: #fff;
 }
 .main .navMobile {
   width: 100%;
   height: 100vh;
-  background-color: rgb(0, 0, 0);
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,7 +127,7 @@ body {
 }
 .main .navMobile .btn i {
   font-size: 40px;
-  color: white;
+  color: #fff;
   cursor: pointer;
 }
 .main .navMobile .links ul {
@@ -135,7 +135,7 @@ body {
   padding: 0;
 }
 .main .navMobile .links ul li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-size: 40px;
   font-family: "Rajdhani", sans-serif;
@@ -169,7 +169,7 @@ body {
   font-weight: 500;
   font-size: 40px;
   margin: 0;
-  color: white;
+  color: #fff;
 }
 @media screen and (max-width: 550px) {
   .main .main-container .info p {
@@ -181,7 +181,7 @@ body {
   font-weight: 900;
   font-size: 70px;
   margin: 0;
-  color: white;
+  color: #fff;
 }
 @media screen and (max-width: 550px) {
   .main .main-container .info h1 {
@@ -192,7 +192,7 @@ body {
   margin-top: 5px;
   padding: 10px 30px;
   background-color: rgba(255, 255, 255, 0.144);
-  color: white;
+  color: #fff;
   font-family: "Rajdhani", sans-serif;
   font-weight: 900;
   text-decoration: none;
@@ -200,13 +200,13 @@ body {
 }
 .main .main-container .info a:hover {
   background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  color: #000;
 }
 
 .about {
   width: 100%;
   height: auto;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
 }
 .about .title {
   width: 1200px;
@@ -272,7 +272,7 @@ body {
 .about .education .education-info .education-card {
   width: 100%;
   height: auto;
-  border: 2px solid black;
+  border: 2px solid #000;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -352,11 +352,11 @@ body {
   }
 }
 .about .education .education-info .education-card a {
-  background-color: rgb(0, 0, 0);
-  color: white;
+  background-color: #000;
+  color: #fff;
   position: absolute;
   padding: 10px 1.5%;
-  border: 2px solid black;
+  border: 2px solid #000;
   border-radius: 10px;
   right: 10px;
   font-family: "Rajdhani", sans-serif;
@@ -373,8 +373,8 @@ body {
   }
 }
 .about .education .education-info .education-card a:hover {
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #000;
 }
 .about .skills {
   width: 1200px;
@@ -409,7 +409,7 @@ body {
 .about .skills .skills-set .skill {
   width: 120px;
   height: 120px;
-  background-color: white;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -427,7 +427,7 @@ body {
 .projects {
   width: 100%;
   height: auto;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
 }
 .projects .title {
   width: 1200px;
@@ -532,8 +532,8 @@ body {
   gap: 10px;
 }
 .projects .projects-container .project .info .buttons a {
-  background-color: black;
-  border: 2px solid black;
+  background-color: #000;
+  border: 2px solid #000;
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
@@ -543,8 +543,8 @@ body {
   transition: 0.2s;
 }
 .projects .projects-container .project .info .buttons a:hover {
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #000;
 }
 .projects .projects-container .project .img {
   width: 58%;
@@ -571,13 +571,13 @@ body {
 }
 .projects .projects-container .view-more p {
   padding: 20px 100px;
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
   font-family: "Rajdhani", sans-serif;
   font-size: 20px;
   font-weight: 900;
   text-decoration: none;
-  border: 2px solid black;
+  border: 2px solid #000;
   transition: 0.2s;
   text-decoration: none;
 }
@@ -588,14 +588,14 @@ body {
   }
 }
 .projects .projects-container .view-more p:hover {
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #000;
 }
 
 .contact {
   width: 100%;
   height: auto;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   padding-bottom: 100px;
 }
 .contact .title {
@@ -644,7 +644,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   padding-left: 10px;
-  border: 1px solid black;
+  border: 1px solid #000;
   border-radius: 0;
 }
 @media screen and (max-width: 550px) {
@@ -659,7 +659,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   padding-left: 10px;
-  border: 1px solid black;
+  border: 1px solid #000;
   border-radius: 0;
 }
 @media screen and (max-width: 550px) {
@@ -670,15 +670,15 @@ body {
 .contact .form-container form button {
   width: 101.8%;
   height: 50px;
-  border: 1px solid black;
-  background-color: white;
-  color: black;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
   transition: 0.2s;
   cursor: pointer;
 }
 .contact .form-container form button:hover {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
 }
 .contact .socials {
   width: 816px;
@@ -687,7 +687,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(0, 0, 0);
+  background-color: #000;
   gap: 10px;
   margin-top: 20px;
 }
@@ -697,7 +697,7 @@ body {
   }
 }
 .contact .socials i {
-  color: white;
+  color: #fff;
   font-size: 40px;
   transition: 0.2s;
 }
@@ -709,13 +709,13 @@ body {
 .footer {
   width: 100%;
   height: 100px;
-  background-color: black;
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .footer p {
-  color: white;
+  color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 15px;

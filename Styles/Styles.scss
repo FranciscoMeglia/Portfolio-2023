@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;700&family=Raleway:wght@100;300;500;900&display=swap');
 @import './MediaQ.scss';
 
+$color-white: #fff;
+$color-black: #000 ;
+
 html {
     scroll-behavior: smooth;
 }
@@ -63,7 +66,7 @@ body {
                 font-size: 40px;
                 padding: 0;
                 margin: 0;
-                color: white;
+                color: $color-white;
 
                 @include mobile2 {
                     font-size: 30px;
@@ -93,7 +96,7 @@ body {
 
                 li a {
                     text-decoration: none;
-                    color: rgb(255, 255, 255);
+                    color: $color-white;
                     font-family: 'Rajdhani', sans-serif;
                     font-weight: 500;
                     font-size: 30px;
@@ -117,7 +120,7 @@ body {
 
             i {
                 font-size: 40px;
-                color: white;
+                color: $color-white;
             }
         }
     }
@@ -127,7 +130,7 @@ body {
     .navMobile {
         width: 100%;
         height: 100vh;
-        background-color: rgb(0, 0, 0);
+        background-color: $color-black;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -143,7 +146,7 @@ body {
 
             i {
                 font-size: 40px;
-                color: white;
+                color: $color-white;
                 cursor: pointer;
             }
         }
@@ -153,7 +156,7 @@ body {
             padding: 0;
 
             li a {
-                color: white;
+                color: $color-white;
                 text-decoration: none;
                 font-size: 40px;
                 font-family: 'Rajdhani', sans-serif;
@@ -191,7 +194,7 @@ body {
                 font-weight: 500;
                 font-size: 40px;
                 margin: 0;
-                color: white;
+                color: $color-white;
 
                 @include mobile2 {
                     font-size: 35px;
@@ -203,7 +206,7 @@ body {
                 font-weight: 900;
                 font-size: 70px;
                 margin: 0;
-                color: white;
+                color: $color-white;
 
                 @include mobile2 {
                     font-size: 50px;
@@ -214,7 +217,7 @@ body {
                 margin-top: 5px;
                 padding: 10px 30px;
                 background-color: rgba(255, 255, 255, 0.144);
-                color: white;
+                color: $color-white;
                 font-family: 'Rajdhani', sans-serif;
                 font-weight: 900;
                 text-decoration: none;
@@ -222,7 +225,7 @@ body {
 
                 &:hover {
                     background-color: rgb(255, 255, 255);
-                    color: rgb(0, 0, 0);
+                    color: $color-black;
                 }
             }
         }
@@ -233,7 +236,7 @@ body {
 .about {
     width: 100%;
     height: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: $color-white;
 
     .title {
         width: 1200px;
@@ -302,7 +305,7 @@ body {
             .education-card {
                 width: 100%;
                 height: auto;
-                border: 2px solid black;
+                border: 2px solid $color-black;
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
@@ -377,11 +380,11 @@ body {
                 }
 
                 a {
-                    background-color: rgb(0, 0, 0);
-                    color: white;
+                    background-color: $color-black;
+                    color: $color-white;
                     position: absolute;
                     padding: 10px 1.5%;
-                    border: 2px solid black;
+                    border: 2px solid $color-black;
                     border-radius: 10px;
                     right: 10px;
                     font-family: 'Rajdhani', sans-serif;
@@ -397,8 +400,8 @@ body {
                     }
 
                     &:hover {
-                        background-color: white;
-                        color: black;
+                        background-color: $color-white;
+                        color: $color-black;
                     }
                 }
             }
@@ -440,7 +443,7 @@ body {
             .skill {
                 width: 120px;
                 height: 120px;
-                background-color: white;
+                background-color: $color-white;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -467,7 +470,7 @@ body {
 .projects {
     width: 100%;
     height: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: $color-white;
 
     .title {
         width: 1200px;
@@ -578,8 +581,8 @@ body {
                     gap: 10px;
 
                     a {
-                        background-color: black;
-                        border: 2px solid black;
+                        background-color: $color-black;
+                        border: 2px solid $color-black;
                         color: white;
                         padding: 10px 15px;
                         border-radius: 5px;
@@ -589,8 +592,8 @@ body {
                         transition: 0.2s;
 
                         &:hover {
-                            background-color: white;
-                            color: black;
+                            background-color: $color-white;
+                            color: $color-black;
                         }
                     }
                 }
@@ -623,13 +626,13 @@ body {
 
             p {
                 padding: 20px 100px;
-                background-color: black;
-                color: white;
+                background-color: $color-black;
+                color: $color-white;
                 font-family: 'Rajdhani', sans-serif;
                 font-size: 20px;
                 font-weight: 900;
                 text-decoration: none;
-                border: 2px solid black;
+                border: 2px solid $color-black;
                 transition: 0.2s;
                 text-decoration: none;
 
@@ -639,8 +642,8 @@ body {
                 }
 
                 &:hover {
-                    background-color: white;
-                    color: black;
+                    background-color: $color-white;
+                    color: $color-black;
                 }
             }
         }
@@ -651,7 +654,7 @@ body {
 .contact {
     width: 100%;
     height: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: $color-white;
     padding-bottom: 100px;
 
     .title {
@@ -700,7 +703,7 @@ body {
                 font-size: 18px;
                 font-weight: 500;
                 padding-left: 10px;
-                border: 1px solid black;
+                border: 1px solid $color-black;
                 border-radius: 0;
                 @include mobile2 {
                     width: 98.5%;
@@ -714,7 +717,7 @@ body {
                 font-size: 18px;
                 font-weight: 500;
                 padding-left: 10px;
-                border: 1px solid black;
+                border: 1px solid $color-black;
                 border-radius: 0;
 
                 @include mobile2 {
@@ -725,15 +728,15 @@ body {
             button {
                 width: 101.8%;
                 height: 50px;
-                border: 1px solid black;
-                background-color: white;
-                color: black;
+                border: 1px solid $color-black;
+                background-color: $color-white;
+                color: $color-black;
                 transition: 0.2s;
                 cursor: pointer;
 
                 &:hover {
-                    background-color: black;
-                    color: white;
+                    background-color: $color-black;
+                    color: $color-white;
                 }
             }
         }
@@ -746,7 +749,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgb(0, 0, 0);
+        background-color: $color-black;
         gap: 10px;
         margin-top: 20px;
 
@@ -755,7 +758,7 @@ body {
         }
 
         i {
-            color: white;
+            color: $color-white;
             font-size: 40px;
             transition: 0.2s;
 
@@ -771,13 +774,13 @@ body {
 .footer {
     width: 100%;
     height: 100px;
-    background-color: black;
+    background-color: $color-black;
     display: flex;
     align-items: center;
     justify-content: center;
 
     p {
-        color: white;
+        color: $color-white;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 300;
         font-size: 15px;
