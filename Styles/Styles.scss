@@ -21,6 +21,7 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.712)), url(../Assets/background-image.webp);
     background-attachment: fixed;
     position: relative;
+
     // WHATSAPP 
     .whatsapp {
         width: auto;
@@ -29,7 +30,7 @@ body {
         bottom: 0px;
         right: 0px;
         transition: 0.6s;
-        animation-name: fadeInUp;
+        animation-name: fadeInRight;
         animation-duration: 2s;
 
         img {
@@ -41,6 +42,48 @@ body {
                 scale: 0.9;
             }
         }
+    }
+
+    .whatsapp-message {
+        width: 230px;
+        height: 30px;
+        background-color: white;
+        position: absolute;
+        right: 110px;
+        bottom: 50px;
+        display: flex;
+        border-radius: 17px;
+        transition: 0.6s;
+        animation: fadeInRight ;
+        animation-duration: 1.5s ;
+
+        .whatsapp-message-1 {
+            width: 92%;
+            height: 100%;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                font-family: 'Rajdhani', sans-serif;
+                margin-left: 15px;
+                font-weight: 900;
+            }
+        }
+
+        .whatsapp-message-2 {
+            width: 21px;
+            height: 21px;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            right: 0;
+            top: 4px;
+            rotate: 45deg;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
     }
 
     // NAVBAR
@@ -126,7 +169,6 @@ body {
     }
 
     // NAV MOBILE
-
     .navMobile {
         width: 100%;
         height: 100vh;
@@ -232,6 +274,90 @@ body {
     }
 }
 
+// SERVICE-SECTION
+/* .service {
+    width: 100%;
+    height: auto;
+
+    .title {
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        text-align: end;
+
+        @include tablet1 {
+            width: 90%;
+        }
+
+        p {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 900;
+            font-size: 40px;
+            text-decoration: underline;
+        }
+    }
+
+    .service-card {
+        width: 1200px;
+        height: auto;
+        min-height: 280px;
+        background-color: $color-white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        @include tablet1 {
+            width: 90%;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .service-card-1 {
+            width: 370px;
+            height: 280px;
+            background-color: $color-white;
+            box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.226);
+            border-radius: 10px;
+            transition: 0.2s;
+
+            &:hover {
+                scale: 1.02;
+                box-shadow: 10px 10px 1px 1px rgba(0, 0, 0, 0.692);
+            }
+
+            .service-card-1-img {
+                width: 100%;
+                height: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .web {
+                    width: 60px;
+                    margin-top: 10px;
+                }
+
+                .mobile {
+                    width: 80px;
+                    margin-top: 10px;
+                }
+            }
+
+            p {
+                width: 90%;
+                // background-color: antiquewhite;
+                margin: auto;
+                text-align: center;
+                text-justify:auto;
+                font-family: 'Rajdhani', sans-serif;
+                font-weight: 900;
+            }
+        }
+    }
+} */
+
 // ABOUT-SECTION
 .about {
     width: 100%;
@@ -266,7 +392,7 @@ body {
 
         p {
             font-family: 'Rajdhani', sans-serif;
-            font-weight: 300;
+            font-weight: 500;
             font-size: 25px;
         }
     }
@@ -283,7 +409,7 @@ body {
         .title-education {
             width: 100%;
             height: auto;
-            text-align: end;
+            text-align: start;
 
             p {
                 font-family: 'Rajdhani', sans-serif;
@@ -305,7 +431,8 @@ body {
             .education-card {
                 width: 100%;
                 height: auto;
-                border: 2px solid $color-black;
+                // border: 2px solid $color-black;
+                box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.226);
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
@@ -385,7 +512,7 @@ body {
                     position: absolute;
                     padding: 10px 1.5%;
                     border: 2px solid $color-black;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     right: 10px;
                     font-family: 'Rajdhani', sans-serif;
                     font-weight: 900;
@@ -421,7 +548,7 @@ body {
         .title-skills {
             width: 100%;
             height: auto;
-            text-align: start;
+            text-align: end;
 
             p {
                 font-family: 'Rajdhani', sans-serif;
@@ -476,7 +603,7 @@ body {
         width: 1200px;
         height: auto;
         margin: 0 auto;
-        text-align: end;
+        text-align: start;
 
         @include tablet1 {
             width: 90%;
@@ -604,7 +731,14 @@ body {
                 height: 90%;
                 border-radius: 10px;
                 background-size: cover;
-                border: 2px solid black;
+                // border: 2px solid black;
+                box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.226);
+                transition: 0.2s;
+
+                &:hover {
+                    scale: 1.02;
+                    box-shadow: 10px 10px 1px 1px rgba(0, 0, 0, 0.692);
+                }
 
                 @include mobile1 {
                     width: 100%;

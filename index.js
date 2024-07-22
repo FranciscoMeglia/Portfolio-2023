@@ -1,4 +1,5 @@
 const whatsapp = document.getElementById("whatsapp")
+const whatsappMessage = document.getElementById("whatsappMessage")
 const sayHi = document.getElementById("hi")
 
 // SAY HI ANIMATION
@@ -17,19 +18,21 @@ const navBtn = document.getElementById("navBtn")
 
 navBtn.addEventListener("click", () => {
     if (nav.classList.contains("nav")) {
-        nav.classList.remove("nav");
-        nav.classList.add("navMobile");
-        navBtn.classList.remove("fa-bars");
-        navBtn.classList.add("fa-xmark");
+        nav.classList.remove("nav")
+        nav.classList.add("navMobile")
+        navBtn.classList.remove("fa-bars")
+        navBtn.classList.add("fa-xmark")
         whatsapp.style.display = "none"
+        whatsappMessage.style.display = "none"
         nav.style.animation = "none"
         document.body.style.overflowY = "hidden"
     } else {
-        nav.classList.remove("navMobile");
+        nav.classList.remove("navMobile")
         nav.classList.add("nav");
-        navBtn.classList.remove("fa-xmark");
-        navBtn.classList.add("fa-bars");
+        navBtn.classList.remove("fa-xmark")
+        navBtn.classList.add("fa-bars")
         whatsapp.style.display = "block"
+        whatsappMessage.style.display = "block"
         document.body.style.overflowY = "auto"
     }
 });
