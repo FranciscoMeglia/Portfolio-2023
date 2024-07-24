@@ -240,7 +240,8 @@ body {
   color: #000;
 }
 
-/* .service {
+/* SERVICE-SECTION
+.service {
     width: 100%;
     height: auto;
 
@@ -262,11 +263,13 @@ body {
         }
     }
 
-    .service-card {
+    .service-container {
         width: 1200px;
         height: auto;
-        min-height: 280px;
+        min-height: 600px;
         background-color: $color-white;
+        box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.226);
+        border-radius: 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -279,47 +282,18 @@ body {
             gap: 40px;
         }
 
-        .service-card-1 {
-            width: 370px;
-            height: 280px;
-            background-color: $color-white;
-            box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.226);
-            border-radius: 10px;
-            transition: 0.2s;
-
-            &:hover {
-                scale: 1.02;
-                box-shadow: 10px 10px 1px 1px rgba(0, 0, 0, 0.692);
-            }
-
-            .service-card-1-img {
-                width: 100%;
-                height: 40%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                .web {
-                    width: 60px;
-                    margin-top: 10px;
-                }
-
-                .mobile {
-                    width: 80px;
-                    margin-top: 10px;
-                }
-            }
-
-            p {
-                width: 90%;
-                // background-color: antiquewhite;
-                margin: auto;
-                text-align: center;
-                text-justify:auto;
-                font-family: 'Rajdhani', sans-serif;
-                font-weight: 900;
-            }
+        .service-container-cards {
+            width: 100%;
+            height: 250px;
+            background-color: antiquewhite;
         }
+
+        .service-container-questions {
+            width: 100%;
+            height: 300px;
+            background-color: #000;
+        }
+
     }
 } */
 .about {
@@ -371,7 +345,7 @@ body {
 .about .education .title-education {
   width: 100%;
   height: auto;
-  text-align: start;
+  text-align: end;
 }
 .about .education .title-education p {
   font-family: "Rajdhani", sans-serif;
@@ -508,7 +482,7 @@ body {
 .about .skills .title-skills {
   width: 100%;
   height: auto;
-  text-align: end;
+  text-align: start;
 }
 .about .skills .title-skills p {
   font-family: "Rajdhani", sans-serif;
@@ -523,7 +497,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 }
 .about .skills .skills-set .skill {
   width: 120px;
@@ -532,12 +506,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 1px 10px 2px rgb(124, 124, 124);
-  border-radius: 100%;
+  box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.356);
+  border-radius: 10px;
+  transition: 0.3s;
 }
 .about .skills .skills-set .skill img {
   width: 50%;
   transition: 0.3s;
+}
+.about .skills .skills-set .skill:hover {
+  box-shadow: 0px 1px 15px 2px rgba(0, 0, 0, 0.664);
 }
 .about .skills .skills-set .skill:hover img {
   scale: 1.2;
@@ -552,7 +530,7 @@ body {
   width: 1200px;
   height: auto;
   margin: 0 auto;
-  text-align: start;
+  text-align: end;
 }
 @media screen and (max-width: 1250px) {
   .projects .title {
