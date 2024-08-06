@@ -49,4 +49,6 @@ links.forEach((link) => {
     })
 })
 
+// AOS init
+AOS.init()
 
