@@ -240,62 +240,58 @@ body {
   color: #000;
 }
 
-/* SERVICE-SECTION
 .service {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+}
+.service .title {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  text-align: end;
+}
+@media screen and (max-width: 1250px) {
+  .service .title {
+    width: 90%;
+  }
+}
+.service .title p {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  text-decoration: underline;
+}
+.service .service-container {
+  width: 1200px;
+  height: auto;
+  min-height: 600px;
+  background-color: #fff;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.226);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1250px) {
+  .service .service-container {
+    width: 90%;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+.service .service-container .service-container-cards {
+  width: 100%;
+  height: 250px;
+  background-color: antiquewhite;
+}
+.service .service-container .service-container-questions {
+  width: 100%;
+  height: 300px;
+  background-color: #000;
+}
 
-    .title {
-        width: 1200px;
-        height: auto;
-        margin: 0 auto;
-        text-align: end;
-
-        @include tablet1 {
-            width: 90%;
-        }
-
-        p {
-            font-family: 'Rajdhani', sans-serif;
-            font-weight: 900;
-            font-size: 40px;
-            text-decoration: underline;
-        }
-    }
-
-    .service-container {
-        width: 1200px;
-        height: auto;
-        min-height: 600px;
-        background-color: $color-white;
-        box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.226);
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin: 0 auto;
-
-        @include tablet1 {
-            width: 90%;
-            justify-content: center;
-            gap: 40px;
-        }
-
-        .service-container-cards {
-            width: 100%;
-            height: 250px;
-            background-color: antiquewhite;
-        }
-
-        .service-container-questions {
-            width: 100%;
-            height: 300px;
-            background-color: #000;
-        }
-
-    }
-} */
 .about {
   width: 100%;
   height: auto;
