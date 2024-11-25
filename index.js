@@ -52,3 +52,49 @@ links.forEach((link) => {
 // AOS init
 AOS.init()
 
+// FORM CONTENT MANAGEMENT
+const submit = document.getElementById("submit")
+const names = document.getElementById("Name")
+const email = document.getElementById("Email")
+const message = document.getElementById("Message")
+
+submit.addEventListener("click" , () => {
+
+    if (names.value.length > 0 && email.value.includes("@") && message.value.length > 0 ) {
+        submit.innerText = "SENDING.."
+    }
+
+})
+
+// CHANGE BUTTON TEXT STATUS
+document.getElementById("form").addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const form = event.target
+  
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: {
+        "Accept": "application/json"
+      }
+    }).then(response => {
+      if (response.ok) {
+        submit.textContent = "¡Thank You ✔️!";
+         setTimeout(() => {
+             submit.textContent = "SUBMIT"
+         }, 3000)
+        form.reset();
+      } else {
+        return response.json().then(errorData => {
+          throw new Error(errorData.message || "Error en el envío");
+        });
+      }
+    }).catch(error => {
+      submit.textContent = "Try again please";
+       setTimeout(() => {
+         submit.textContent = "SUBMIT"
+     }, 3000)
+    });
+});
+  
